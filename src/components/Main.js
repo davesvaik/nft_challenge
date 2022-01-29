@@ -24,26 +24,29 @@ const Main = ({ selectedPunk, punkListData }) => {
           </div>
         </div>
         <div className="punkDetails" style={{ color: "#fff" }}>
-          <div className="title">Active punk</div>
-          <span className="itemNumber">#</span>
-        </div>
-        <div className="owner">
-          <div className="ownerImageContainer">
-            {/* <img src={activePunk.image_original_URL} alt="" /> */}
+          <div className="title">
+            {activePunk.name}
+            <span className="itemNumber">#{activePunk.token_id}</span>
           </div>
-          <div className="ownerDetails">
-            <div className="ownerNameAndHandle">
-              <div>0x496f85c7e7b8d803E5BBAD8F3b31AE88c8A91bBC</div>
-              <div className="ownerHandle">@codingdave</div>
+
+          <div className="owner">
+            <div className="ownerImageContainer">
+              <img src={activePunk.owner.profile_img_url} alt="" />
             </div>
-            <div className="ownerLink">
-              <img src={instagramLogo} alt="" />
-            </div>
-            <div className="ownerLink">
-              <img src={twitterLogo} alt="" />
-            </div>
-            <div className="ownerLink">
-              <img src={moreIcon} alt="" />
+            <div className="ownerDetails">
+              <div className="ownerNameAndHandle">
+                <div>{activePunk.owner.address}</div>
+                <div className="ownerHandle">@codingdave</div>
+              </div>
+              <div className="ownerLink">
+                <img src={instagramLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={twitterLogo} alt="" />
+              </div>
+              <div className="ownerLink">
+                <img src={moreIcon} alt="" />
+              </div>
             </div>
           </div>
         </div>
