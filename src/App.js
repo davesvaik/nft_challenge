@@ -29,7 +29,7 @@ function App() {
       {punkListData.length > 0 && (
         // are there punks available? then display
         <>
-          <Main punkListData={punkListData} />
+          <Main punkListData={punkListData} selectedPunk={selectedPunk} />
           <PunkList
             punkListData={punkListData}
             setSelectedPunk={setSelectedPunk}

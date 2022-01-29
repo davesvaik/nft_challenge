@@ -18,7 +18,7 @@ const Main = ({ selectedPunk, punkListData }) => {
           <div className="punkContainer">
             <img
               className="selectedPunk"
-              src={activePunk.image_original_URL}
+              src={activePunk.image_original_url}
               alt=""
             />
           </div>
@@ -29,7 +29,7 @@ const Main = ({ selectedPunk, punkListData }) => {
         </div>
         <div className="owner">
           <div className="ownerImageContainer">
-            <img src={activePunk.image_original_URL} alt="" />
+            {/* <img src={activePunk.image_original_URL} alt="" /> */}
           </div>
           <div className="ownerDetails">
             <div className="ownerNameAndHandle">
